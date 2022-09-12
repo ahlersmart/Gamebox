@@ -1,0 +1,28 @@
+﻿<Window x:Class="Spellendoos.GameSelector"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Spellendoos"
+        mc:Ignorable="d"
+        Title="GameSelector" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="11*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="357*"/>
+            <ColumnDefinition Width="388*"/>
+            <ColumnDefinition Width="49*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="Assets/Menu.jpg" Stretch="Fill" Grid.ColumnSpan="3" Margin="0,0,-0.4,0" Grid.RowSpan="2"/>
+        <Button x:Name="options_Btn" Content="Options" HorizontalAlignment="Left" Margin="55,220,0,0" VerticalAlignment="Top" Width="118" Height="25" Click="Options_Btn_Click"/>
+        <Button x:Name="quit_Btn" Content="Quit Game" HorizontalAlignment="Left" Margin="55,265,0,0" VerticalAlignment="Top" Width="118" Height="25" Click="Quit_Btn_Click"/>
+        <Button x:Name="start_Yahtzee" Content="Start Yahtzee" Width="118" Height="25" Click="Start_Yahtzee_Click" Margin="327,142,299.8,218.163" Grid.ColumnSpan="2"/>
+        <Button x:Name="start_mejin_Btn" Content="Mens erger je niet" HorizontalAlignment="Right" Margin="0,143,63.8,0" VerticalAlignment="Top" Width="118" Height="24" Click="Start_MEJN_Click" Grid.Column="1"/>
+        <Button x:Name="score_Btn" Content="Score" HorizontalAlignment="Left" Margin="55,176,0,0" VerticalAlignment="Top" Width="118" Height="24" Click="Score_Btn_Click"/>
+
+
+    </Grid>
+</Window>
